@@ -39,7 +39,7 @@ void vendor_load_properties()
     char device[PROP_VALUE_MAX];
     char devicename[PROP_VALUE_MAX];
 
-    property_get("ro.bootloader", bootloader);
+    property_get("ro.bootloader");
 
     if (strstr(bootloader, "G531BT")) {
         /* grandprimeve3gdtv */
