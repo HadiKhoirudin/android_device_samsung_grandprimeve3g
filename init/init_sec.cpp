@@ -35,11 +35,9 @@
 
 void vendor_load_properties()
 {
-    char bootloader[PROP_VALUE_MAX];
-    char device[PROP_VALUE_MAX];
     char devicename[PROP_VALUE_MAX];
 
-    bootloader = property_get("ro.bootloader");
+    std::string bootloader = property_get("ro.bootloader");
 
     if (strstr(bootloader, "G531BT")) {
         /* grandprimeve3gdtv */
@@ -51,7 +49,7 @@ void vendor_load_properties()
         property_set("ro.product.device", "grandprimeve3g");
     }
 
-    device = property_get("ro.product.device");
+    std::string device = property_get("ro.product.device");
     strlcpy(devicename, device, sizeof(devicename));
     ERROR("Found bootloader id %s setting build properties for %s device\n", bootloader, devicename);
 }
