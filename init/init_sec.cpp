@@ -50,6 +50,5 @@ void vendor_load_properties()
     }
 
     std::string device = property_get("ro.product.device");
-    strlcpy(devicename, device, sizeof(devicename));
-    ERROR("Found bootloader id %s setting build properties for %s device\n", bootloader, devicename);
+	property_set("ro.product.device", device);
 }
