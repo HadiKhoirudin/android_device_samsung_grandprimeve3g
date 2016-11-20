@@ -31,7 +31,7 @@ TARGET_BOOTLOADER_BOARD_NAME := SC7730SE
 TARGET_GLOBAL_CFLAGS += -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a7 -mfpu=neon -mfloat-abi=softfp
 BOARD_VENDOR := samsung
-TARGET_UNIFIED_DEVICE := true
+#TARGET_UNIFIED_DEVICE := true
 
 # Config u-boot
 TARGET_NO_BOOTLOADER := true
@@ -134,7 +134,7 @@ TARGET_RECOVERY_FSTAB := device/samsung/grandprimeve3g/rootdir/fstab.sc8830
 TARGET_OTA_ASSERT_DEVICE := SM-G531H,SM-G531BT,grandprimeve3g,grandprimeve3gdtv,grandprimeve3gub,grandprimeve3gxx,grandprimeve3gdtvvj
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_sec
+#TARGET_INIT_VENDOR_LIB := libinit_sec
 
 # PowerHAL
 TARGET_POWERHAL_VARIANT := samsung
