@@ -120,9 +120,6 @@ SOC_SCX30G_V2 := true
 BOARD_USE_SAMSUNG_COLORFORMAT := true
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
-# Disable crappy JACK
-LOCAL_JACK_ENABLED := disabled
-
 # healthd
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.sc8830
 
